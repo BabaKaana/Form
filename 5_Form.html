@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Form</title>
+        <style>
+            fieldset {padding:10px; margin: 5px;}
+            legend {font-size: 130%;}
+            input, select, textarea, button {margin: 5px;}
+            label {margin: 7px; font-size: 105%;}
+        </style>
+    </head>
+
+    <body>
+        <form action="https://formspree.io/f/xdknzzgb" method="post">
+            <fieldset>
+                <legend>Introduction</legend>
+                <label for="fname"> First Name:</label>
+                <input id="fname" type="text" name="fname"><br>
+                <label for="lname"> Last Name:</label>
+                <input id="lname" type="text" name="lname"><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"><br>
+                <label for="age">Age:</label>
+                <input id="age" type="number" name="age" min="16">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label for="phone">Phone No:</label>
+                <input type="tel" id="phone" name="phone"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd">
+            </fieldset>
+
+            <fieldset>
+                <legend>Attributes</legend>
+                <label for="anx">Anxiety Level:</label>
+                <input type="range" id="anx" name="anx" min="0" max="10"><br>
+
+                <h3>Interests</h3>
+                <input type="checkbox" name="interests" id="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" name="interests" id="music">
+                <label for="music">Music</label>
+                <input type="checkbox" name="interests" id="movies">
+                <label for="movies">Movies</label>
+                <input type="checkbox" name="interests" id="book">
+                <label for="book">Books</label>
+
+                <h3>Gender</h3>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Info.</legend>
+                <label for="photo">Upload your recent photo:</label>
+                <input type="file" id="photo" name="photo"><br><br>
+                <label for="field">Choose your occupation:</label>
+                <select id="field" name="field">
+                    <option id="cs">Computer Engineer</option>
+                    <option id="law">Lawyer</option>
+                    <option id="teacher">Teacher</option>
+                    <option id="study">Student</option>
+                </select><br><br>
+                <label for="about">Tell us more about you:</label><br>
+                <textarea id="about" name="about" rows="10" cols="40"></textarea><br>
+
+                <h3 id="surprise" style="display: inline-block;">Lastly, I want to thank you for filling this form. Click Here.</h3>
+            <button type="button" onclick="document.getElementById('surprise').textContent = 'I love you &#128536';
+                        document.getElementById('surprise').style.fontSize = '44px';">Click Me!</button><br>
+
+            </fieldset>
+
+            <br><input type="submit" value="Submit" name="submit">
+            <input type="reset" value="Reset" name="reset"><br><br><br><br><br><br>
+        </form>
+
+    </body>
+</html>
