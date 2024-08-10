@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            fieldset {padding:10px; margin: 5px; border: 2px solid darkgray;}
+            fieldset {padding:10px; margin: 5px; margin-top: 10px; border: 2px solid darkgray;}
             legend {font-size: 130%;}
             input, select, textarea, button {margin: 5px;}
             label {margin: 7px; font-size: 105%;}
@@ -13,7 +13,7 @@
     </head>
 
     <body>
-        <form autocomplete="on" novalidate>
+        <form action="https://formspree.io/f/xdknzzgb" method="get" autocomplete="on" novalidate>
             <fieldset>
                 <legend>Introduction</legend>
                 <label for="fname">First Name:</label>
@@ -62,10 +62,10 @@
 
             <fieldset>
                 <legend>Personal Info.</legend>
-                <label for="photo">Upload your recent photo:</label>
+                <label for="photo">Upload your recent photo:</label><br>
                 <input type="file" id="photo" name="photo"><br><br>
 
-                <label for="field">Choose your occupation:</label>
+                <label for="field">Choose your occupation:</label><br>
                 <select id="field" name="field">
                     <option value="doctor">Doctor</option>
                     <option value="law">Lawyer</option>
@@ -74,7 +74,7 @@
                 </select><br><br>
 
                 <label for="about">Tell us more about you:</label><br>
-                <textarea id="about" name="about" rows="10" cols="40"></textarea><br>
+                <textarea id="about" name="about" rows="10" cols="30"></textarea><br>
 
                 <h3 id="surprise" style="display: inline-block;">Lastly, I want to thank you for filling this form. Click Here.</h3>
             <button type="button" onclick="document.getElementById('surprise').textContent = 'I love you &#128536';
