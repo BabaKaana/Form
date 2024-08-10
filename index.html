@@ -5,15 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            fieldset {padding:8px; margin: 5px; margin-top: 10px; border: 2px solid darkgray;}
-            legend {font-size: 125%;}
-            input, select, textarea, button {margin: 3px;}
-            label {margin: 5px; font-size: 103%;}
+            fieldset {padding:7px; margin: 5px; margin-top: 10px; border: 2px solid darkgray;}
+            legend {font-size: 120%;}
+            input, select, textarea, button {margin: 5px;}
+            label {margin: 6px; font-size: 103%;}
         </style>
     </head>
 
     <body>
-        <form action="https://formspree.io/f/xdknzzgb" method="POST" autocomplete="on" novalidate>
+        <form action="https://formspree.io/f/xdknzzgb" method="post" autocomplete="on" novalidate>
             <fieldset>
                 <legend>Introduction</legend>
                 <label for="fname">First Name:</label>
@@ -39,24 +39,24 @@
             <fieldset>
                 <legend>Attributes</legend>
                 <label for="anx">Anxiety Level:</label>
-                <input type="range" id="anx" name="anx" min="0" max="10"><br>
+                <input type="range" id="anx" name="anxiety" min="0" max="10"><br>
 
                 <h3>Interests</h3>
-                <input type="checkbox" name="interests" id="coding">
+                <input type="checkbox" name="interests" id="coding" value="coding">
                 <label for="coding">Coding</label>
-                <input type="checkbox" name="interests" id="music">
+                <input type="checkbox" name="interests" id="music" value="music">
                 <label for="music">Music</label><br>
-                <input type="checkbox" name="interests" id="movies">
+                <input type="checkbox" name="interests" id="movies" value="movies">
                 <label for="movies">Movies</label>
-                <input type="checkbox" name="interests" id="book">
+                <input type="checkbox" name="interests" id="book" value="books">
                 <label for="book">Books</label>
 
                 <h3>Gender</h3>
-                <input type="radio" name="gender" id="male">
+                <input type="radio" name="gender" id="male" value="male">
                 <label for="male">Male</label>
-                <input type="radio" name="gender" id="female">
+                <input type="radio" name="gender" id="female" value="female">
                 <label for="female">Female</label>
-                <input type="radio" name="gender" id="other">
+                <input type="radio" name="gender" id="other" value="other">
                 <label for="other">Other</label>
             </fieldset>
 
@@ -70,7 +70,7 @@
                     <option value="doctor">Doctor</option>
                     <option value="law">Lawyer</option>
                     <option value="teacher">Teacher</option>
-                    <option value="study" selected>Student</option>
+                    <option value="student" selected>Student</option>
                 </select><br><br>
 
                 <label for="about">Tell us more about you:</label><br>
@@ -82,8 +82,8 @@
 
             </fieldset>
 
-            <br><input type="submit" value="Submit" name="submit">
-            <input type="reset" value="Reset" name="reset"><br><br><br><br><br><br>
+            <br><input type="submit" value="Submit">
+            <input type="reset" value="Reset"><br><br><br><br><br><br>
         </form>
 
     </body>
